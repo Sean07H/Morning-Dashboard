@@ -89,10 +89,37 @@ Calendar integration coming soon
 <h2>📝 Notes</h2>
 
 
+<select id="categoryInput">
+
+<option value="General">
+General
+</option>
+
+<option value="School">
+School
+</option>
+
+<option value="Projects">
+Projects
+</option>
+
+<option value="Ideas">
+Ideas
+</option>
+
+<option value="Personal">
+Personal
+</option>
+
+</select>
+
+
+
 <input 
 id="noteSearch"
 placeholder="Search notes..."
 oninput="displayNotes()">
+
 
 
 <textarea 
@@ -101,9 +128,11 @@ placeholder="Write a note..."
 ></textarea>
 
 
+
 <button onclick="addNote()">
 Save Note
 </button>
+
 
 
 <div id="notesList"></div>
