@@ -88,9 +88,25 @@ Calendar integration coming soon
 
 <h2>📝 Notes</h2>
 
-<p>
-Notes system coming soon
-</p>
+
+<input 
+id="noteSearch"
+placeholder="Search notes..."
+oninput="displayNotes()">
+
+
+<textarea 
+id="noteInput"
+placeholder="Write a note..."
+></textarea>
+
+
+<button onclick="addNote()">
+Save Note
+</button>
+
+
+<div id="notesList"></div>
 
 
 </section>
